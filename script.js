@@ -1,19 +1,17 @@
-// Mobile Menu Toggle
+const menuBtn = document.querySelector(".menu-btn");
+const closeBtn = document.querySelector(".close-btn");
+const navLinks = document.querySelector(".nav-links");
 
-const navLinks  = document.querySelectorAll(".nav-menu .nav-link");
-const menuOpenButton  = document.querySelector("#menu-open-button");
-const menuCloseButton  = document.querySelector("#menu-close-button");
-
-menuOpenButton.addEventListener("click", () => {
-    //Toggle mobile menu visibility//
-    document.body.classList.toggle("show-mobile-menu");
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.add("active");
 });
 
-// close menu when the close button is clicked//
-menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+closeBtn.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+});
 
-// close menu when the nav link is clicked//
-navLinks.forEach(link =>{
-    link.addEventListener("click", () => menuOpenButton.click());
-})
-
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});

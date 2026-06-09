@@ -13,7 +13,7 @@ body{
 
 /* NAVBAR */
 
-.navbar{
+ .navbar{
     width:90%;
     margin:auto;
     padding:25px 0;
@@ -64,7 +64,7 @@ body{
     top: 25px;
     right: 25px;
     z-index: 1003;
-}
+} 
 
 /* HERO */
 
@@ -385,16 +385,33 @@ section{
     gap:2rem;
 }
 
-.social-icons a{
+.socials-card{
+    background:#10182F;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+
+.socials-card p{
+    padding-top: 1rem;
+    color: #FF4ECD;
+}
+
+.socials-card a{
     width:60px;
     height:60px;
     border-radius:50%;
     background:#10182F;
     display:flex;
     justify-content:center;
+    text-align: center;
     align-items:center;
     color:#fff;
-    font-size:1.5rem;
+    font-size:2rem;
     text-decoration:none;
     transition:.4s;
 }

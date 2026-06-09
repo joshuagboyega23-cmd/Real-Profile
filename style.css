@@ -399,6 +399,11 @@ section{
 .socials-card p{
     padding-top: 1rem;
     color: #FF4ECD;
+    cursor: pointer;
+}
+
+.socials-card p:hover{
+    color: white;
 }
 
 .socials-card a{

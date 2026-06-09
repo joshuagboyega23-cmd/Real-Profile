@@ -4,14 +4,16 @@ const navLinks = document.querySelector(".nav-links");
 
 menuBtn.addEventListener("click", () => {
     navLinks.classList.add("active");
+    closeBtn.classList.add("active");
 });
 
 closeBtn.addEventListener("click", () => {
     navLinks.classList.remove("active");
+    closeBtn.classList.remove("active");
 });
 
-document.querySelectorAll(".nav-links a").forEach(link => {
+/* document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
         navLinks.classList.remove("active");
     });
-});
+}); */

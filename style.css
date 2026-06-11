@@ -48,22 +48,22 @@ body{
 
 .menu-btn{
     display:none;
-    background:none;
+    /* background:none;
     border:none;
     color:white;
     font-size:1.8rem;
-    cursor:pointer;
+    cursor:pointer; */
 }
 
 .close-btn {
     display: none;
-    font-size: 2rem;
+    /* font-size: 2rem;
     cursor: pointer;
     color: white;
     position: absolute;
     top: 25px;
     right: 25px;
-    z-index: 1003;
+    z-index: 1003; */
 } 
 
 /* HERO */
@@ -471,7 +471,7 @@ footer{
 
 /* RESPONSIVE */
 
-@media (max-width: 900px) {
+@media (max-width: 820px) {
 
     .navbar {
         width: 95%;
